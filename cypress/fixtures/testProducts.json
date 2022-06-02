@@ -1,0 +1,16 @@
+{
+  "Category1": "Phones",
+  "Category2": "Laptops",
+  "Category3": "Monitors",
+
+  "Product1": "Nexus 6",
+  "Product2": "MacBook air",
+  "Product3": "ASUS Full HD",
+
+  "UserNameOrder": "Filip Filipovic",
+  "UserCountry": "Croatia",
+  "UserCity": "Zagreb",
+  "UserCreditCardNumber": "123456789",
+  "Month": "Travanj",
+  "Year": "2022"
+}

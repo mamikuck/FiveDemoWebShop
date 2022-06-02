@@ -1,0 +1,48 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "cypress Demo App",
+  "main": "index.js",
+  "dependencies": {
+    "cypress-lighthouse": "^0.1.0"
+  },
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "cypress-file-upload": "^4.1.1",
+    "i": "^0.3.6",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "scripts": {
+    "cy:qa:de": "cypress open --env configFile=qa,country=de",
+    "cy:qa:pl": "cypress open --env configFile=qa,country=pl",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "test:accessibility": "./node_modules/.bin/cypress-tags run -e TAGS=\"@accessibility\"",
+    "test": "cypress run --spec \"**/*.feature\"",
+    "eject": "react-scripts eject",
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "test:awesome": "mocha --reporter mochawesome || true",
+    "open:report": "open mochawesome-report/mochawesome.html",
+    "cypress:report": "generate-mochawasome-report",
+    "report:merge": "mochawesome-merge --reportDir cypress/results/json > cypress/results/mochawesome-bundle.json",
+    "report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html",
+    "report:copyScreenshots": "cp -r cypress/screenshots cypress/reports/html/screenshots",
+    "test:cli": "npm run delete:reportFolder && cypress run",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json",
+    "clean:reports": "rmdir /S /Q mochawesome-report && mkdir mochawesome-report",
+    "delete:reportFolder": "RD /S /Q mochawesome-report/"
+  },
+  "author": "Marin Mikulicic",
+  "license": "ISC"
+}
