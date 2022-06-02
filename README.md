@@ -88,6 +88,7 @@ Use the folowing file which can be user to test new user
 1. Go to `cypress/fixture/testData.json` - add desired test data:
 
 - a) "UserNAME": " XXX " - here new user can be defined with format e.g. "Petar987"
+  (if there is an existing user already registered, the log file will show the info in cypress as alert)
 - b) "Password": " XXX " - here new password can be defined with format e.g. "Pass1234!"
 
 2. Go to `cypress/fixture/testProducts.json` - add desired test data:
