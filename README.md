@@ -51,9 +51,9 @@ On failed tests, a screenshot and video will be attached to the report.
 
 ## Run Config
 
-1.  To run tests in browser view with log files use the command: 'npx cypress open'
-2.  To run tests in headless mode use the command: 'npx cypress run'
-3.  To run tests by tag in feauture file use the command: 'npx cypress-tags run -e TAGS="@login" --headless --browser chrome'
+1.  To run tests in browser view with log files use the command: `npx cypress open`
+2.  To run tests in headless mode use the command: `npx cypress-tags run -e TAGS="@app" --headless --browser chrome`
+3.  To run tests by tag in feauture file use the command: `npx cypress-tags run -e TAGS="@login" --headless --browser chrome`
 
 Genereting HTML Report after test execution:
 

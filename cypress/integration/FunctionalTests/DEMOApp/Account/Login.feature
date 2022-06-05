@@ -1,4 +1,4 @@
-@login
+@login @app
 Feature: Login to webshop
 
   Registered user can login

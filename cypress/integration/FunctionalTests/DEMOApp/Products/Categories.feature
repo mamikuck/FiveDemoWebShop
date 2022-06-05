@@ -1,4 +1,4 @@
-@categoris  @products
+@categoris  @products @app
 Feature: Check webshop categories and products
 
   As a user I want to verify wehshop products and categories

@@ -1,4 +1,4 @@
-@logout
+@logout @app
 Feature: Logout from webshop
 
    Logged in user can logout

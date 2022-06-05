@@ -1,4 +1,4 @@
-@createAccount
+@createAccount @app
 Feature: As a User I want to create new account
 
   As a Visitor user can create an account
