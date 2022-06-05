@@ -29,7 +29,12 @@ command for cucumber support
 npm install --save-dev cypress-cucumber-preprocessor
 
 ```
+command for reporter
 
+```
+npm i --save-dev cypress-mochawesome-reporter
+
+```
 ## Reporter
 
 By default the project is using the mochawesome reporter. After running the tests the report will be genarated in the `cypress/report` folder.
