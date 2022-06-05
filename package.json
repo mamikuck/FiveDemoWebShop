@@ -7,7 +7,7 @@
     "cypress-lighthouse": "^0.1.0"
   },
   "devDependencies": {
-    "cypress": "^8.6.0",
+    "cypress": "^9.7.0",
     "cypress-cucumber-preprocessor": "^2.5.5",
     "cypress-file-upload": "^4.1.1",
     "i": "^0.3.6",
@@ -21,8 +21,6 @@
     "nonGlobalStepDefinitions": true
   },
   "scripts": {
-    "cy:qa:de": "cypress open --env configFile=qa,country=de",
-    "cy:qa:pl": "cypress open --env configFile=qa,country=pl",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "cypress:open": "npx cypress open",

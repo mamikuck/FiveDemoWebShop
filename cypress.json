@@ -7,12 +7,12 @@
   "video": false,
   "baseURL": "https://www.demoblaze.com/",
   "projectId": "2s310f",
-  "defaultCommandTimeout": 9000,
+  "defaultCommandTimeout": 10000,
   "e2e": {
-    "defaultCommandTimeout": 9000
+    "defaultCommandTimeout": 10000
   },
-  "responseTimeout": 9000,
-  "requestTimeout": 9000,
+  "responseTimeout": 10000,
+  "requestTimeout": 10000,
 
   "pageLoadTimeout": 100000,
   "env": {

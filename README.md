@@ -40,7 +40,7 @@ On failed tests, a screenshot and video will be attached to the report.
 - tests are defined in the `cypress/integration/FunctionalTests/DEMOApp` folder
 - test steps are defined in cucumber feature files
 - global commands can be found in `cypress/support/commands.js`
-- environment-specific configuration can be found in `cypress/config/env`
+- environment-specific configuration can be found in `cypress.json`
 - test data can be found in `cypress/fixtures`
 
 ====================================
